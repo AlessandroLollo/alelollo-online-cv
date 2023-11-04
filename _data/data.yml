@@ -14,17 +14,17 @@ sidebar:
 
     # Sidebar links
     email: alessandro.lollo@gmail.com
-    #phone: 012 345 6789
+    #phone:
     timezone: Europe/Rome
     citizenship:
-    #website: blog.webjeda.com #do not add http://
+    #website:
     linkedin: AlessandroLollo
     github: AlessandroLollo
     twitter: '@ale_lollo87'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    stack-overflow:
     #codewars:
-    #goodreads: # Number-Username, e.g. 123456-alandoe
-    #pdf: http://www.africau.edu/images/default/sample.pdf
+    #goodreads:
+    #pdf:
 
     languages:
       title: Languages
@@ -68,30 +68,41 @@ experiences:
         company: Cloud Academy
         link: "https://cloudacademy.com/"
         details: |
-          Built from scratch, lead and mentor the Data Engineering Team.
+          Built, lead, and mentor the Data Engineering & Data Analytics Teams.
 
-          I've lead and implemented the Data Engineering infrastructure
-          to ingest, process, and transform data coming from several sources
+          Lead and implemented the Data Engineering infrastructure
+          to ingest, process, and transform data from several sources
           that are being used to serve analytics to both internal stakeholders
           and enterprise customers.
 
-          I've defined best practices and lead initiatives with regards to:
+          Defined and implemented best practices for:
           - Data Lake/DWH design and implementation.
-          - Dimensional modeling.Data pipelines design and implementation.
-          - Dashboard design and implementation.
-          - Design and implementation of the headless BI platform to serve
+          - Dimensional modeling. Data pipelines design and implementation.
+          - Data pipeline design and implementation using Software Engineering principles.
+          - Integration of Data Quality Monitoring into data pipelines.
+          - Dashboard/reporting design and implementation.
+          - Design and implementation of an analytics solution to serve
             enterprise clients data needs.
-          - Management of data needs coming from both internal stakeholders
+
+          Lead initiatives to:
+          - Hire, train, and mentor Data Engineers and Data Analysts.
+          - Define career ladder for Data Engineers and Data Analysts.
+          - Management of data needs coming from internal stakeholders
             and enterprise clients.
+          - Selection of tools and vendors to implement the analytics solution used
+            by internal stakeholders and enterprise clients.
+          - Train internal stakeholders on how to use the internal BI platform.
           
-          I've been working with the Engineering, Product, and Content Teams
-          to help them identifying the most appropriate KPIs to track how
-          users are using product features and how they consume the content
-          we create for them.
-          In this context, I've been leading several initiatives about:
-          - Business requirements collection.
-          - Data source selection.
-          - KPI definition.
+          I've been working with internal stakeholders such as Engineering, Product,
+          and Content Teams to help them identifying the most appropriate KPIs to track how
+          users are using product features and how they use the content
+          available in the platform.
+          Lead initiatives to:
+          - Collect business requirements.
+          - Select appropriate datasources to build the single source of truth.
+          - Define and validate KPIs.
+          - Design and implement reporting for internal stakeholders.
+
 
       - role: Data Governance Manager
         time: 2018 - 2020
