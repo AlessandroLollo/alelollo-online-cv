@@ -177,7 +177,12 @@ p {
     margin-bottom: 60px;
   }
 
-  .experiences-section,
+  //.experiences-section,
+  .experiences-section {
+    .company-link{
+      color: $theme-color
+    }
+  }
   .educations-section {
     .item {
       margin-bottom: 30px;

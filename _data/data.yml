@@ -3,7 +3,7 @@
 #
 
 sidebar:
-    position: left # position of the sidebar : left or right
+    position: right # position of the sidebar : left or right
     about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
@@ -38,16 +38,19 @@ sidebar:
     interests:
       title: Interests
       info:
-        - item: Music
-          link:
+        - item: Music (especially indie, funk, alternative, electronic)
+          #link:
+        - item: Craft beer
+        - item: Food travel
 
 career-profile:
     title: Career Profile
     summary: |
-      10+ years experience in Data Engineering, BI & Analytics.
+      10+ years experience in Data Engineering, BI & Analytics.  
       I use data, technology and modern approaches to help businesses
-      make better, data-driven decisions.
-      Eager to learn, grow and help others growing.
+      make better, data-driven decisions.  
+      Eager to learn, grow and help others growing.  
+      Remote work enthusiast.
 
 education:
     title: Education
@@ -55,10 +58,7 @@ education:
       - degree: BSc in Computer Science
         university: Università degli studi di Padova
         time: 2006 - 2009
-        details: |
-          TODO
-            - Bullet point
-            - Bullet point
+        #details: |
 
 experiences:
     title: Experiences
@@ -66,6 +66,7 @@ experiences:
       - role: Data Engineering Manager
         time: 2020 - Present
         company: Cloud Academy
+        link: "https://cloudacademy.com/"
         details: |
           Built from scratch, lead and mentor the Data Engineering Team.
 
@@ -95,6 +96,7 @@ experiences:
       - role: Data Governance Manager
         time: 2018 - 2020
         company: Cuebiq
+        link: "https://www.cuebiq.com/"
         details: |
           I have established Data Governance policies to improve the
           corporate data management strategy.
@@ -114,6 +116,7 @@ experiences:
       - role: Chief Data Officer
         time: 2017 - 2018
         company: Linear Assicurazioni
+        link: "https://www.linear.it/"
         details: |
           I led the Data Center & Business Intelligence Team which was in
           charge of the development, implementation and maintenance of data
@@ -128,6 +131,7 @@ experiences:
       - role: Senior Solution Designer & Analyst
         time: 2013 - 2017
         company: IConsulting
+        link: "https://www.iconsulting.biz/"
         details: |
           I was responsible for the design, implementation and optimization
           of Business Analytics solutions for a variety of customers including
@@ -145,83 +149,73 @@ experiences:
       - role: Other roles
         time: 2010 - 2013
         company: CINECA, CSP S.p.a.
-        details: |
-          TODO
 
 certifications:
       title: Certifications
       list:
-        - name: TODO
-          start: TODO
-          end: TODO
-          organization: TODO
-          credentialid: TODO
-          credentialurl: TODO
-          credentialname: TODO
-          details: |
-            TODO
-
-# projects:
-#     title: Projects
-#     intro: >
-#       TODO
-#     assignments:
-#       - title: TODO
-#         link: "TODO"
-#         tagline: "TODO"
+        - name: Prefect Associate Certification
+          start: June 2023
+          # end: TODO
+          organization: Prefect
+          credentialid: 76213076
+          credentialurl: credential.net/183b74b2-aeee-49c2-b792-1170eb2e650c#gs.0iq41w
+          credentialname: Prefect Associate Certification
+          #details: |
 
 oss:
     title: OSS Contributions
     intro: >
-      TODO
+      As a data professional, I know that many of the tools I use everyday are built
+      using open source software that someone out there is maintaining.
+      I strongly believe in open source principles, and back in 2020 I started contributing
+      actively on open source projects.
     contributions:
-      - title: TODO
-        link: "TODO"
-        tagline: "TODO"
-
-# publications:
-#     title: Publications
-#     intro: |
-#       You can list your publications in this section. Lorem ipsum dolor sit
-#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-#       bibendum fringilla a eu lectus.
-#     papers:
-#       - title: The Art of Computer Programming
-#         link: "#"
-#         authors: Donald E. Knuth
-#         conference: Addison-Wesley, 1968
-
-#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-#         link: "#"
-#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-#       - title: A syntax directed compiler for Algol 60
-#         link: "#"
-#         authors: Edgar T. Irons
-#         conference: "Comm. ACM 4 (1961), 51–55"
+      - title: "Cube.dev Prefect Collection"
+        link: "alessandrolollo.github.io/prefect-cubejs/"
+        tagline: "Prefect tasks that can be used to easily interact with Cube.dev APIs."
+      - title: "SodaSQL Prefect Collection"
+        link: "sodadata.github.io/prefect-soda-core/"
+        tagline: "Prefect tasks that can be used to run Data Quality Checks using SodaSQL and SodaCL."
+      - title: "Sifflet Prefect Collection"
+        link: "siffletapp.github.io/prefect-sifflet/"
+        tagline: "Prefect tasks that can be used to trigger Sifflet Data Quality rules."
+      - title: "First version of dbt Cloud task for Prefect v1"
+        link: "github.com/PrefectHQ/prefect/pull/5085"
+        tagline: "Prefect v1 task that can be used to interact with dbt Cloud APIs."
+      - title: "Other contributions to Prefect v1"
+        link: "github.com/PrefectHQ/prefect/pulls?q=author%3Aalessandrolollo"
+        tagline: "List of PRs I've contributed to Prefect since 2020."
 
 skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
-        level: 98%
+      - name: Data modeling for Data Warehouse (dimensional modeling using Kimball methodology)
+        level: 100%
+      
+      - name: SQL &amp; OLAP databases
+        level: 100%
 
-      - name: Javascript & jQuery
-        level: 98%
+      - name: Prefect (mainly open source version)
+        level: 90%
+      
+      - name: dbt
+        level: 90%
 
-      - name: Angular
-        level: 98%
+      - name: Python for Data Engineering
+        level: 80%
+      
+      - name: Cloud services for Data Engineering (mainly AWS)
+        level: 80%
 
-      - name: HTML5 & CSS
-        level: 95%
+      - name: Data viz tools &amp; reporting (Apache Superset, Hex, PowerBI, Tableau, Excel, Google Sheets)
+        level: 80%
 
-      - name: Ruby on Rails
-        level: 85%
+      - name: Docker
+        level: 70%
 
-      - name: Sketch & Photoshop
-        level: 60%
+      - name: Terraform
+        level: 20%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
