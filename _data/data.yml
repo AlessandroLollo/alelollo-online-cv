@@ -67,14 +67,13 @@ experiences:
       company: LocalStack
       link: "https://localstack.cloud"
       details: |
-        Contributed to development, maintenance, and evolution of large scale real-time data ingestion
-        pipelines.  
-        Led and contributed to several initiatives, including:
-        - Maintenance and evolution of large scale data ingestion solutions
-        - Design and implementation of analytics and reporting solution for internal stakeholders
-        - Products engineering and bug fixing
-        - Vendors &amp; tools selection to implement a new data platform
+        Contributed to the development, maintenance, and evolution of large-scale real-time data ingestion pipelines, ensuring reliable and efficient data flow across the organization.
 
+        Led and executed key initiatives, including:
+        - Maintaining and enhancing large-scale data ingestion solutions
+        - Designing and implementing analytics and reporting tools for internal stakeholders
+        - Supporting product engineering and resolving critical issues
+        - Leading vendor and tool selection to implement a next-generation data platform
 
     - role: Data Engineering Manager
       time: 2020 - 2024
