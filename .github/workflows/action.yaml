@@ -20,6 +20,9 @@ jobs:
       - name: Set up Docker Compose
         run: |
           docker compose version || docker --version
+    
+      - name: Fix permissions
+        run: sudo chmod -R 777 .
 
       - name: Start services
         run: |
