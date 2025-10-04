@@ -38,11 +38,11 @@ sidebar:
   interests:
     title: Interests
     info:
-      - item: 🎧 Music
-      - item: 🌍 Travel
-      - item: 🍲 Food
-      - item: 📖 Books
-      - item: 🏋️‍♀️ Crossfit
+      - item: 🎧 Music 🌍 Travel 🍲 Food 📖 Books 🏋️‍♀️ Crossfit
+      #- item: 🌍 Travel
+      #- item: 🍲 Food
+      #- item: 📖 Books
+      #- item: 🏋️‍♀️ Crossfit
 
 career-profile:
   title: Career Profile
@@ -73,7 +73,7 @@ experiences:
         - Maintaining and enhancing large-scale data ingestion solutions
         - Designing and implementing analytics and reporting tools for internal stakeholders
         - Supporting product engineering and resolving critical issues
-        - Leading vendor and tool selection to implement a next-generation data platform
+        - Leading vendor and tool selection to implement a new data platform
 
     - role: Data Engineering Manager
       time: 2020 - 2024
