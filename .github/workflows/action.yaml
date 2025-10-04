@@ -24,8 +24,9 @@ jobs:
       - name: Start services
         run: |
           docker compose up -d
-          echo "Waiting for webapp to start..."
-          for i in {1..30}; do
+          echo "Waiting for webapp to start (sleeping 10s)..."
+          sleep 10
+          for i in {1..5}; do
             if curl -fsS http://localhost:4000/ > /dev/null; then
               echo "✅ Webapp is up!"
               exit 0
