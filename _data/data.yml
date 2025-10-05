@@ -20,7 +20,7 @@ sidebar:
   #website:
   linkedin: AlessandroLollo
   github: AlessandroLollo
-  twitter: '@ale_lollo87'
+  #twitter: '@ale_lollo87'
   #stack-overflow:
   #codewars:
   #goodreads:
@@ -38,11 +38,11 @@ sidebar:
   interests:
     title: Interests
     info:
-      - item: 🎧 Music
-      - item: 🌍 Travel
-      - item: 🍲 Food
-      - item: 📖 Books
-      - item: 🏋️‍♀️ Crossfit
+      - item: Music - Travel - Food - Books - Crossfit
+      # - item: Travel
+      # - item: Food
+      # - item: Books
+      # - item: Crossfit
 
 career-profile:
   title: Career Profile
@@ -160,12 +160,10 @@ experiences:
 #       #details: |
 
 oss:
-  title: Open source
+  title: Open source contributions
   intro: >
-    As a data professional, I know that many of the tools I use everyday are built
-    using open source software that someone out there is maintaining.
-    I strongly believe in open source principles, and back in 2020 I started contributing
-    actively on open source projects.
+    As a data professional, I recognize that many of the tools I rely on daily are powered by open-source software maintained by dedicated contributors. I strongly believe in the principles of open collaboration and transparency, and since 2020, I have been actively contributing to open-source projects.
+  
   contributions:
     - title: "Cube.dev Prefect Collection"
       link: "alessandrolollo.github.io/prefect-cubejs/"
