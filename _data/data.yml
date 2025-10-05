@@ -38,11 +38,11 @@ sidebar:
   interests:
     title: Interests
     info:
-      - item: 🎧 Music 🌍 Travel 🍲 Food 📖 Books 🏋️‍♀️ Crossfit
-      #- item: 🌍 Travel
-      #- item: 🍲 Food
-      #- item: 📖 Books
-      #- item: 🏋️‍♀️ Crossfit
+      - item: 🎧 Music
+      - item: 🌍 Travel
+      - item: 🍲 Food
+      - item: 📖 Books
+      - item: 🏋️‍♀️ Crossfit
 
 career-profile:
   title: Career Profile
@@ -62,7 +62,7 @@ education:
 experiences:
   title: Experiences
   info:
-    - role: Senior Data Engineer
+    - role: Senior Data Platform Engineer
       time: 2025 - Present
       company: LocalStack
       link: "https://localstack.cloud"
@@ -81,31 +81,21 @@ experiences:
       company: Cloud Academy
       link: "https://cloudacademy.com/"
       details: |
-        Led the creation, growth, and mentoring of the Data Engineering & Analytics team,
-        driving initiatives that transformed how data was used to support business decisions and enterprise customers analytics requirements.
+        Led the creation, growth, and mentoring of the Data Engineering & Analytics team, driving initiatives that transformed how data was leveraged to support business decisions and enterprise customer analytics needs.
 
-        Designed, implemented, and evolved the Data Engineering infrastructure to ingest, process,
-        and transform data from multiple sources, ensuring timely and accurate data delivery
-        to internal stakeholders and enterprise customers.
+        Designed, implemented, and evolved the Data Engineering infrastructure to ingest, process, and transform data from multiple sources, ensuring accurate and timely delivery to stakeholders and clients.
 
         Championed best practices across the data platform, including:
-        - Data Lake & Data Warehouse design and implementation
-        - Data modeling and pipeline development based on software engineering principles
-        - Integration of Data Quality monitoring as a core platform component
-        - Dashboard and reporting design and deployment
-        - Analytics solutions for internal and external stakeholders
+        - Data Lake & Warehouse architecture and implementation
+        - Scalable data modeling, pipelines, and integrated data quality monitoring
+        - Dashboard development and analytics enablement for internal and external stakeholders
 
-        Led strategic initiatives to build and scale the team and capabilities:
-        - Hiring, training, and mentoring Data Engineers and Data Analysts
-        - Defining career ladders and professional development paths
-        - Managing data requirements from internal stakeholders and enterprise clients
-        - Selecting vendors, solutions, and tools to deliver high-impact analytics solutions
-        - Training internal stakeholders on effective use of the BI platform
+        Led strategic initiatives to build and scale the team and capabilities, including:
+        - Hiring, mentoring, and developing Data Engineers and Analysts
+        - Defining career frameworks and managing enterprise data requirements
+        - Selecting and deploying analytics tools while training stakeholders on BI platform adoption
 
-        Partnered with Engineering, Product, and Content teams to define metrics that measure product feature usage
-        and content engagement:
-        - Led collection of business requirements and selection of appropriate data sources to build a single source of truth
-        - Defined, validated, and tracked KPIs
+        Partnered with Engineering, Product, and Content teams to define and operationalize key business metrics, unify data sources into a single source of truth, and establish robust KPI tracking for product usage and content engagement.
 
         Through these initiatives, drove a culture of data excellence, quality, and actionable insights across the organization.
 
@@ -119,24 +109,24 @@ experiences:
         Enabled Product teams to gain actionable insights and effectively manage the quality of multiple data products.
 
         Directed the technical implementation and deployment of key solutions, including:
-        - Data Catalog solution Adopted by 150+ users to efficiently discover dataset information and metadata essential for their work.
+        - Data Catalog solution adopted by 150+ users to efficiently discover dataset information and metadata essential for their work.
         - Corporate Data Warehouse as the single source of truth for certified, high-quality, and trusted data,
         supporting analysis, reporting, and company performance monitoring.
 
         Through these initiatives, strengthened data governance, improved data reliability,
         and empowered teams to make data-driven decisions with confidence.
 
-    - role: Chief Data Officer
-      time: 2017 - 2018
-      company: Linear Assicurazioni
-      link: "https://www.linear.it/"
-      details: |
-        Led the Data Center & BI Team in developing and maintaining analytics solutions to monitor company performance,
-        with a focus on revenue from car and life insurance products.
+    # - role: Chief Data Officer
+    #   time: 2017 - 2018
+    #   company: Linear Assicurazioni
+    #   link: "https://www.linear.it/"
+    #   details: |
+    #     Led the Data Center & BI Team in developing and maintaining analytics solutions to monitor company performance,
+    #     with a focus on revenue from car and life insurance products.
         
-        Partnered with the Head of IT, General Manager, and senior management to define and implement the long-term data strategy,
-        ensuring analytics initiatives aligned with business goals and
-        supported data-driven decision-making across the organization.
+    #     Partnered with the Head of IT, General Manager, and senior management to define and implement the long-term data strategy,
+    #     ensuring analytics initiatives aligned with business goals and
+    #     supported data-driven decision-making across the organization.
 
     - role: Senior Solution Designer & Analyst
       time: 2013 - 2017
@@ -154,23 +144,23 @@ experiences:
         fostering knowledge transfer, skill development, and adoption of best practices.
 
     - role: Other roles
-      time: 2010 - 2013
-      company: CINECA, CSP S.p.a.
+      time: 2010 - 2013, 2017 - 2018
+      company: CINECA, CSP S.p.a., Linear Assicurazioni
 
-certifications:
-  title: Certifications
-  list:
-    - name: Prefect Associate Certification
-      start: June 2023
-      # end: TODO
-      organization: Prefect
-      credentialid: 76213076
-      credentialurl: credential.net/183b74b2-aeee-49c2-b792-1170eb2e650c#gs.0iq41w
-      credentialname: Prefect Associate Certification
-      #details: |
+# certifications:
+#   title: Certifications
+#   list:
+#     - name: Prefect Associate Certification
+#       start: June 2023
+#       # end: TODO
+#       organization: Prefect
+#       credentialid: 76213076
+#       credentialurl: credential.net/183b74b2-aeee-49c2-b792-1170eb2e650c#gs.0iq41w
+#       credentialname: Prefect Associate Certification
+#       #details: |
 
 oss:
-  title: OSS Contributions
+  title: Open source
   intro: >
     As a data professional, I know that many of the tools I use everyday are built
     using open source software that someone out there is maintaining.
@@ -179,51 +169,45 @@ oss:
   contributions:
     - title: "Cube.dev Prefect Collection"
       link: "alessandrolollo.github.io/prefect-cubejs/"
-      tagline: "Prefect tasks that can be used to easily interact with Cube.dev APIs."
+      tagline: "Prefect tasks to interact with Cube.dev APIs."
     - title: "SodaSQL Prefect Collection"
       link: "sodadata.github.io/prefect-soda-core/"
-      tagline: "Prefect tasks that can be used to run Data Quality Checks using SodaSQL and SodaCL."
+      tagline: "Prefect tasks to run Data Quality Checks using SodaSQL and SodaCL."
     - title: "Sifflet Prefect Collection"
       link: "siffletapp.github.io/prefect-sifflet/"
-      tagline: "Prefect tasks that can be used to trigger Sifflet Data Quality rules."
+      tagline: "Prefect tasks to trigger Sifflet Data Quality rules."
     - title: "First version of dbt Cloud task for Prefect v1"
       link: "github.com/PrefectHQ/prefect/pull/5085"
-      tagline: "Prefect v1 task that can be used to interact with dbt Cloud APIs."
+      tagline: "Prefect v1 task to interact with dbt Cloud APIs."
     - title: "Other contributions to Prefect v1"
       link: "github.com/PrefectHQ/prefect/pulls?q=author%3Aalessandrolollo"
-      tagline: "List of PRs I've contributed to Prefect since 2020."
+      tagline: "PRs I've contributed to Prefect since 2020."
 
 skills:
-  title: Tools &amp; Tech Skills
+  title: Tools &amp; Skills
   details: |
     Cloud services: S3, Glue, ECS, Redshift, Lambda, Kinesis, RDS, DynamoDB  
     Orchestration: Prefect, Luigi, and commercial solutions from known vendors  
-    Databases: Clickhouse (Tinybird), Redshift, Snowflake, SQL Server, Fabric, Postgres, Duckdb  
+    Databases: Clickhouse (Tinybird), Redshift, Snowflake, SQL Server, Postgres, Duckdb  
     Data manipulation &amp; scripting: Python, SQL, bash, dbt  
-    Data &amp; semantic modeling: Cube.dev and commercial solutions from known vendors  
+    Semantic modeling: Cube.dev and commercial solutions from known vendors  
     Devops &amp; CI/CD: Github Actions, Jenkins, Docker  
 
   toolset:
+    - name: Data architecture
+      level: 100%
+    
     - name: Data modeling
       level: 100%
-    
-    - name: SQL
-      level: 100%
 
-    - name: Orchestration tools
+    - name: Data orchestration
       level: 100%
     
-    - name: Cloud (AWS)
+    - name: Cloud services
       level: 80%
     
-    - name: Python
+    - name: Devops &amp; dataops
       level: 80%
-
-    - name: Dataviz tools
-      level: 80%
-
-    - name: DevOps
-      level: 50%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
