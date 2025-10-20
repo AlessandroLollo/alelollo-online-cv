@@ -166,19 +166,19 @@ oss:
   
   contributions:
     - title: "Cube.dev Prefect Collection"
-      link: "alessandrolollo.github.io/prefect-cubejs/"
+      link: "https://alessandrolollo.github.io/prefect-cubejs/"
       tagline: "Prefect tasks to interact with Cube.dev APIs."
     - title: "SodaSQL Prefect Collection"
-      link: "sodadata.github.io/prefect-soda-core/"
+      link: "https://sodadata.github.io/prefect-soda-core/"
       tagline: "Prefect tasks to run Data Quality Checks using SodaSQL and SodaCL."
     - title: "Sifflet Prefect Collection"
-      link: "siffletapp.github.io/prefect-sifflet/"
+      link: "https://siffletdata.github.io/prefect-sifflet/"
       tagline: "Prefect tasks to trigger Sifflet Data Quality rules."
     - title: "First version of dbt Cloud task for Prefect v1"
-      link: "github.com/PrefectHQ/prefect/pull/5085"
+      link: "https://github.com/PrefectHQ/prefect/pull/5085"
       tagline: "Prefect v1 task to interact with dbt Cloud APIs."
     - title: "Other contributions to Prefect v1"
-      link: "github.com/PrefectHQ/prefect/pulls?q=author%3Aalessandrolollo"
+      link: "https://github.com/PrefectHQ/prefect/pulls?q=author%3Aalessandrolollo"
       tagline: "PRs I've contributed to Prefect since 2020."
 
 skills:
