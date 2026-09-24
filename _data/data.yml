@@ -200,7 +200,7 @@ skills:
     Cloud services: S3, Glue, ECS, Redshift, Lambda, Kinesis, RDS, DynamoDB, Google Cloud Storage  
     Orchestration: Prefect, Luigi, and commercial solutions from known vendors  
     Databases: Clickhouse (Tinybird), Redshift, Snowflake, SQL Server, Postgres, Duckdb, Google BigQuery  
-    Data manipulation &amp; scripting: Python, SQL, bash, dbt  
+    Data manipulation &amp; scripting: Python, SQL, bash, dbt, Databricks  
     Semantic modeling: Cube.dev and commercial solutions from known vendors  
     Devops &amp; CI/CD: Github Actions, Jenkins, Docker  
 
