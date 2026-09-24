@@ -62,8 +62,21 @@ education:
 experiences:
   title: Experiences
   info:
+    - role: Tech Advisor
+      time: 2026 - Present
+      company: ICONSULTING
+      link: "https://www.iconsulting.com/"
+      details: |
+        Driving the definition and implementation of data architecture solutions across client engagements, 
+        guiding development teams through implementation phases in line with quality standards and delivery best practices.
+
+        Led and executed several initiatives, including:
+        - Defining target data architectures and technical roadmaps aligned with client business requirements
+        - Working across diverse technology stacks and code-based data platform scenarios, adapting architectural and implementation approaches to different client contexts
+        - Taking part in requirements deep-dive activities to gain a clearer understanding of functional needs and ensure a coherent, well-aligned implementation output
+        
     - role: Senior Data Platform Engineer
-      time: 2025 - Present
+      time: 2025 - 2026
       company: LocalStack
       link: "https://localstack.cloud"
       details: |
@@ -131,7 +144,7 @@ experiences:
     - role: Senior Solution Designer & Analyst
       time: 2013 - 2017
       company: ICONSULTING
-      link: "https://www.iconsulting.biz/"
+      link: "https://www.iconsulting.com/"
       details: |
         Led the design, implementation, and optimization of Business Analytics solutions for a diverse client base,
         including multinational holdings, banks, B2C and B2B companies, and fashion brands.
@@ -184,9 +197,9 @@ oss:
 skills:
   title: Tools &amp; Skills
   details: |
-    Cloud services: S3, Glue, ECS, Redshift, Lambda, Kinesis, RDS, DynamoDB  
+    Cloud services: S3, Glue, ECS, Redshift, Lambda, Kinesis, RDS, DynamoDB, Google Cloud Storage  
     Orchestration: Prefect, Luigi, and commercial solutions from known vendors  
-    Databases: Clickhouse (Tinybird), Redshift, Snowflake, SQL Server, Postgres, Duckdb  
+    Databases: Clickhouse (Tinybird), Redshift, Snowflake, SQL Server, Postgres, Duckdb, Google BigQuery  
     Data manipulation &amp; scripting: Python, SQL, bash, dbt  
     Semantic modeling: Cube.dev and commercial solutions from known vendors  
     Devops &amp; CI/CD: Github Actions, Jenkins, Docker  
