@@ -13,7 +13,7 @@ sidebar:
   avatar: ale.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: alessandro.lollo@gmail.com
+  email: alessandro.lollo@gmail.com, a.lollo@iconsulting.com
   #phone:
   timezone: Europe/Rome
   citizenship:
@@ -199,8 +199,8 @@ skills:
   details: |
     Cloud services: S3, Glue, ECS, Redshift, Lambda, Kinesis, RDS, DynamoDB, Google Cloud Storage  
     Orchestration: Prefect, Luigi, and commercial solutions from known vendors  
-    Databases: Clickhouse (Tinybird), Redshift, Snowflake, SQL Server, Postgres, Duckdb, Google BigQuery  
-    Data manipulation &amp; scripting: Python, SQL, bash, dbt  
+    Databases: Clickhouse (Tinybird), Redshift, Snowflake, SQL Server, Postgres, Duckdb, Google BigQuery
+    Data manipulation &amp; scripting: Python, SQL, bash, dbt, Databricks
     Semantic modeling: Cube.dev and commercial solutions from known vendors  
     Devops &amp; CI/CD: Github Actions, Jenkins, Docker  
 
