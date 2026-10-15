@@ -1,0 +1,10 @@
+{
+  "name": "alelollo-online-cv",
+  "private": true,
+  "scripts": {
+    "test": "node tests/explorer.cjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  }
+}

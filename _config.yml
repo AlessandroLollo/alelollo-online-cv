@@ -1,14 +1,13 @@
 #Update all the sections by editing the data.yml file inside _data folder.
 
 # Site Settings
-title: My Resume
-url: 'http://webjeda.com'
+title: Alessandro Lollo · Data & Analytics Engineering
+url: 'https://alessandrolollo.github.io'
+baseurl: '/alelollo-online-cv'
 
-#change it according to your repository name
-# disabling since we are using a custom domain
-#baseurl: '/online-cv' 
+# For a custom domain, set baseurl to '' and add your own CNAME.
 
-description: A beautiful Jekyll theme for creating resume
+description: Alessandro Lollo’s experience in data architecture, analytics engineering, governance, and engineering leadership.
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
 theme_skin: ceramic # blue turquoise green berry orange ceramic
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
@@ -25,6 +24,15 @@ sass:
 compress-site: yes
 
 encoding: "utf-8"
+exclude:
+  - node_modules
+  - tests
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - README.md
 compress_html: # - http://jch.penibelst.de/
   clippings: all
   ignore:

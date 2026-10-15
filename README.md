@@ -1,3 +1,25 @@
+## Alessandro Lollo · Career explorer
+
+A database-inspired résumé for technical and executive recruiters. Built with **Jekyll, Liquid, custom CSS, and vanilla JavaScript**; no client framework, database, or new production dependencies. Career records remain in `_data/data.yml`. Overview and leadership summaries live in `_layouts/explorer.html`; update them when the underlying experience changes. Role links use the ordering in `experiences.info` (zero-based record IDs).
+
+Experience supports text filtering and expandable records; leadership, tools, contributions, and education have dedicated views. Content renders without JavaScript. Native links, visible keyboard focus, responsive career cards, reduced-motion support, and the existing `/print` résumé are retained. The SQL snippet is a profile illustration, not an executable query editor.
+
+Run `bundle install` then `bundle exec jekyll serve`. The site uses the `/alelollo-online-cv/` path. `_config.yml` sets `url` to `https://alessandrolollo.github.io` and `baseurl` to `/alelollo-online-cv`. The upstream theme's `online-cv.webjeda.com` CNAME has been removed. For your own custom domain, add its CNAME and set `baseurl: ''`.
+
+Run browser regression checks against the running site:
+
+```sh
+npm ci
+npx playwright install chromium
+npm test
+```
+
+`CV_BASE_URL` overrides the site URL; `CHROMIUM_PATH` selects an existing Chromium executable. Tests check navigation, filtering, empty results, record links, local assets, layouts at 320–1440px, no-JavaScript content, and the printable résumé. CI builds and serves Jekyll before running the checks.
+
+The original Orbit documentation follows, including attribution for the retained printable résumé.
+
+---
+
 <a href="https://jekyll-themes.com">
 <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
 </a>
