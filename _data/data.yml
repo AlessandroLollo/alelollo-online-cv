@@ -62,7 +62,8 @@ education:
 experiences:
   title: Experiences
   info:
-    - role: Tech Advisor
+    - id: iconsulting-advisor
+      role: Tech Advisor
       time: 2026 - Present
       company: ICONSULTING
       link: "https://www.iconsulting.com/"
@@ -75,7 +76,8 @@ experiences:
         - Working across diverse technology stacks and code-based data platform scenarios, adapting architectural and implementation approaches to different client contexts
         - Taking part in requirements deep-dive activities to gain a clearer understanding of functional needs and ensure a coherent, well-aligned implementation output
         
-    - role: Senior Data Platform Engineer
+    - id: localstack
+      role: Senior Data Platform Engineer
       time: 2025 - 2026
       company: LocalStack
       link: "https://localstack.cloud"
@@ -89,7 +91,8 @@ experiences:
         - Supporting product engineering and resolving critical issues
         - Leading vendor and tool selection to implement a new data platform
 
-    - role: Data Engineering Manager
+    - id: cloud-academy
+      role: Data Engineering Manager
       time: 2020 - 2024
       company: Cloud Academy
       link: "https://cloudacademy.com/"
@@ -112,7 +115,8 @@ experiences:
 
         Through these initiatives, drove a culture of data excellence, quality, and actionable insights across the organization.
 
-    - role: Data Governance Manager
+    - id: cuebiq
+      role: Data Governance Manager
       time: 2018 - 2020
       company: Cuebiq
       link: "https://www.cuebiq.com/"
@@ -141,7 +145,8 @@ experiences:
     #     ensuring analytics initiatives aligned with business goals and
     #     supported data-driven decision-making across the organization.
 
-    - role: Senior Solution Designer & Analyst
+    - id: iconsulting-analytics
+      role: Senior Solution Designer & Analyst
       time: 2013 - 2017
       company: ICONSULTING
       link: "https://www.iconsulting.com/"
@@ -156,7 +161,8 @@ experiences:
         Delivered regular technical training sessions for team members and clients,
         fostering knowledge transfer, skill development, and adoption of best practices.
 
-    - role: Other roles
+    - id: earlier-roles
+      role: Other roles
       time: 2010 - 2013, 2017 - 2018
       company: CINECA, CSP S.p.a., Linear Assicurazioni
 
@@ -178,19 +184,24 @@ oss:
     As a data professional, I recognize that many of the tools I rely on daily are powered by open-source software maintained by dedicated contributors. I strongly believe in the principles of open collaboration and transparency, and since 2020, I have been actively contributing to open-source projects.
   
   contributions:
-    - title: "Cube.dev Prefect Collection"
+    - id: prefect-cube
+      title: "Cube.dev Prefect Collection"
       link: "https://alessandrolollo.github.io/prefect-cubejs/"
       tagline: "Prefect tasks to interact with Cube.dev APIs."
-    - title: "SodaSQL Prefect Collection"
+    - id: prefect-soda
+      title: "SodaSQL Prefect Collection"
       link: "https://sodadata.github.io/prefect-soda-core/"
       tagline: "Prefect tasks to run Data Quality Checks using SodaSQL and SodaCL."
-    - title: "Sifflet Prefect Collection"
+    - id: prefect-sifflet
+      title: "Sifflet Prefect Collection"
       link: "https://siffletdata.github.io/prefect-sifflet/"
       tagline: "Prefect tasks to trigger Sifflet Data Quality rules."
-    - title: "First version of dbt Cloud task for Prefect v1"
+    - id: prefect-dbt
+      title: "First version of dbt Cloud task for Prefect v1"
       link: "https://github.com/PrefectHQ/prefect/pull/5085"
       tagline: "Prefect v1 task to interact with dbt Cloud APIs."
-    - title: "Other contributions to Prefect v1"
+    - id: prefect-contributions
+      title: "Other contributions to Prefect v1"
       link: "https://github.com/PrefectHQ/prefect/pulls?q=author%3Aalessandrolollo"
       tagline: "PRs I've contributed to Prefect since 2020."
 

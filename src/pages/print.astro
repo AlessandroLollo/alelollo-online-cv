@@ -1,0 +1,319 @@
+---
+import { career } from "../lib/career";
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alessandro Lollo · Résumé</title>
+    <meta
+      name="description"
+      content="Alessandro Lollo’s printable résumé: data and analytics engineering, architecture, and leadership."
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f1f3f2;
+        color: #202b25;
+        font:
+          13px/1.65 -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+      .print-actions {
+        max-width: 900px;
+        margin: 25px auto;
+        display: flex;
+        gap: 20px;
+        padding: 0 30px;
+        align-items: center;
+      }
+      .print-actions button {
+        cursor: pointer;
+        border: 0;
+        border-radius: 4px;
+        padding: 10px 18px;
+        background: #227c57;
+        color: white;
+        font: inherit;
+      }
+      .print-actions a {
+        color: #227c57;
+        font-size: 12px;
+      }
+      .resume {
+        background: white;
+        max-width: 900px;
+        margin: 0 auto 40px;
+        padding: 45px 50px;
+      }
+      h1 {
+        font-size: 32px;
+        letter-spacing: -1px;
+        line-height: 1.3;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 16px;
+        border-bottom: 1px solid #d5ddd7;
+        padding-bottom: 8px;
+        margin: 27px 0 18px;
+        color: #227c57;
+      }
+      h3 {
+        font-size: 14px;
+        margin: 0 0 5px;
+      }
+      p {
+        margin: 8px 0 12px;
+      }
+      a {
+        color: #227c57;
+        text-underline-offset: 3px;
+        overflow-wrap: anywhere;
+      }
+      header {
+        margin-bottom: 23px;
+      }
+      .headline {
+        font-size: 15px;
+        margin: 0 0 14px;
+      }
+      .contacts {
+        font-size: 11px;
+        display: flex;
+        gap: 6px 20px;
+        flex-wrap: wrap;
+      }
+      article {
+        margin-bottom: 24px;
+        scroll-margin-top: 20px;
+      }
+      .role-header {
+        break-inside: avoid;
+      }
+      .role-meta {
+        color: #647269;
+        font-size: 11px;
+        margin: 0 0 10px;
+      }
+      li {
+        margin: 5px 0;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .tools p {
+        margin: 10px 0;
+      }
+      .education p {
+        margin: 4px 0;
+      }
+      .contribution {
+        break-inside: avoid;
+        margin-bottom: 15px;
+      }
+      .contribution h3 {
+        font-size: 12px;
+      }
+      .contribution p {
+        font-size: 12px;
+      }
+      .last-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .last-section h2 {
+        margin-top: 15px;
+      }
+      .last-section p {
+        font-size: 12px;
+      }
+      @page {
+        size: A4;
+        margin: 17mm 16mm 18mm;
+      }
+      @media print {
+        body {
+          background: white;
+          font-size: 10px;
+          line-height: 1.65;
+        }
+        .print-actions {
+          display: none;
+        }
+        .resume {
+          max-width: none;
+          padding: 0;
+          margin: 0;
+        }
+        h1 {
+          font-size: 26px;
+        }
+        h2 {
+          font-size: 13px;
+          margin-top: 23px;
+          break-after: avoid;
+        }
+        h3 {
+          font-size: 11px;
+        }
+        p,
+        li {
+          orphans: 3;
+          widows: 3;
+        }
+        .role-header {
+          break-after: avoid;
+        }
+        article {
+          margin-bottom: 20px;
+        }
+        .role-meta {
+          font-size: 9px;
+        }
+        .headline {
+          font-size: 12px;
+        }
+        .contacts {
+          font-size: 9px;
+        }
+        .tools p {
+          font-size: 10px;
+        }
+        .last-section {
+          break-inside: avoid;
+        }
+        .last-section p {
+          font-size: 10px;
+        }
+        a {
+          text-decoration: none;
+        }
+        .contribution h3,
+        .contribution p {
+          font-size: 10px;
+        }
+      }
+      @media (max-width: 600px) {
+        .resume {
+          padding: 28px 22px;
+        }
+        .print-actions {
+          padding: 0 22px;
+        }
+        .last-section {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+        h1 {
+          font-size: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="print-actions" aria-label="Résumé actions">
+      <a href={base}>← Back to explorer</a>
+      <button id="print-button" type="button">
+        Print / Save as PDF
+      </button>
+    </nav>
+    <main class="resume" id="main">
+      <header>
+        <h1>{career.profile.name}</h1>
+        <p class="headline">
+          Data & Analytics Engineering · Architecture · Leadership
+        </p>
+        <div class="contacts">
+          <a href={`mailto:${career.profile.email}`}>{career.profile.email}</a>
+          <a href={`https://www.linkedin.com/in/${career.profile.linkedin}/`}>
+            LinkedIn / {career.profile.linkedin}
+          </a>
+          <a href={`https://github.com/${career.profile.github}`}>
+            GitHub / {career.profile.github}
+          </a>
+          <span>{career.profile.timezone}</span>
+        </div>
+      </header>
+      <section>
+        <h2>Career profile</h2>
+        <div set:html={career.profile.summaryHtml} />
+      </section>
+      <section>
+        <h2>Experience</h2>
+        {career.experience.map((job) => (
+          <article id={job.id}>
+            <div class="role-header">
+              <h3>{job.role}</h3>
+              <p class="role-meta">
+                {job.company} · {job.period}
+              </p>
+            </div>
+            <div set:html={job.html} />
+          </article>
+        ))}
+      </section>
+      <section>
+        <h2>Open source contributions</h2>
+        <p>{career.ossIntro}</p>
+        {career.contributions.map((item) => (
+          <article class="contribution" id={item.id}>
+            <h3>
+              <a href={item.link}>{item.role}</a>
+            </h3>
+            <p>{item.outcome}</p>
+          </article>
+        ))}
+      </section>
+      <section class="tools">
+        <h2>Tools & skills</h2>
+        {career.tools.map((tool) => (
+          <p id={tool.id}>
+            <strong>{tool.category}:</strong> {tool.tools}
+          </p>
+        ))}
+      </section>
+      <section class="education">
+        <h2>Education</h2>
+        {career.education.map((item) => (
+          <article>
+            <h3>{item.degree}</h3>
+            <p>
+              {item.university} · {item.time}
+            </p>
+          </article>
+        ))}
+      </section>
+      <div class="last-section">
+        <section>
+          <h2>Languages</h2>
+          {career.profile.languages.info.map((language) => (
+            <p>
+              {language.idiom} · {language.level}
+            </p>
+          ))}
+        </section>
+        <section>
+          <h2>Interests</h2>
+          {career.profile.interests.info.map((interest) => (
+            <p>{interest.item}</p>
+          ))}
+        </section>
+      </div>
+    </main>
+    <script>
+      document
+        .getElementById("print-button")
+        ?.addEventListener("click", () => window.print());
+    </script>
+  </body>
+</html>

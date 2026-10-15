@@ -1,38 +1,67 @@
-name: Verify résumé explorer
+name: Build and verify career database
 
 on:
   pull_request:
     types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
 
+env:
+  ASTRO_TELEMETRY_DISABLED: "1"
+
 concurrency:
-  group: webapp-verification-${{ github.ref }}
-  cancel-in-progress: true
+  group: career-database-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  verify-webapp:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
     steps:
       - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1.7'
-          bundler: '2.3.19'
-          bundler-cache: true
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
           cache: npm
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Build and serve the GitHub Pages site
-        run: |
-          bundle exec jekyll build
-          bundle exec jekyll serve --host 127.0.0.1 > /tmp/jekyll.log 2>&1 &
-          curl --fail --retry 20 --retry-connrefused --retry-delay 1 http://127.0.0.1:4000/alelollo-online-cv/ > /dev/null
-      - run: npm test
-      - name: Startup diagnostics
+      - name: Typecheck, build static HTML, and export CV PDF
+        run: npm run build
+      - name: Browser regression checks
+        run: npm test
+      - name: Browser diagnostics
         if: failure()
-        run: cat /tmp/jekyll.log || true
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-test-results
+          path: test-results/
+          if-no-files-found: ignore
+      - name: Configure Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v5
+      - name: Upload static site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

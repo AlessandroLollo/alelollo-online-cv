@@ -1,0 +1,113 @@
+# Curated summaries of the existing résumé. Keep evidence factual; do not infer
+# which technologies were used at an employer from the general skills inventory.
+experience:
+  iconsulting-advisor:
+    focus: Architecture
+    views: [engineering, leadership, business-impact]
+    keywords:
+      [data architecture, technical strategy, roadmaps, stakeholder management]
+    outcome: Target architectures and technical roadmaps aligned with client requirements.
+  localstack:
+    focus: Platform engineering
+    views: [engineering, business-impact]
+    keywords: [real-time ingestion, pipelines, analytics, vendor selection]
+    outcome: Evolved ingestion pipelines and supported the selection of a new data platform.
+  cloud-academy:
+    focus: Leadership
+    views: [engineering, leadership, business-impact]
+    keywords:
+      [
+        team leadership,
+        hiring,
+        mentoring,
+        data modeling,
+        data warehouse,
+        analytics,
+        KPI,
+      ]
+    outcome: Built the Data Engineering & Analytics team and the platform supporting stakeholder and customer analytics.
+  cuebiq:
+    focus: Governance
+    views: [engineering, leadership, business-impact]
+    keywords:
+      [
+        data governance,
+        data quality,
+        data catalog,
+        discovery,
+        stakeholder management,
+      ]
+    outcome: Delivered a data catalog adopted by 150+ users and a trusted corporate warehouse.
+  iconsulting-analytics:
+    focus: Analytics
+    views: [engineering, leadership, business-impact]
+    keywords: [ETL, BI, technical delivery, training, client engagement]
+    outcome: Delivered analytics solutions and technical training for diverse client organizations.
+  earlier-roles:
+    focus: Earlier roles
+    views: []
+    keywords: []
+    outcome: Earlier experience across CINECA, CSP S.p.a., and Linear Assicurazioni.
+
+projects:
+  - id: trusted-data
+    title: A shared foundation for trusted data
+    experienceId: cuebiq
+    focus: Governance
+    views: [engineering, leadership, business-impact]
+    problem: Teams needed to discover datasets, understand their quality, and work from trusted information.
+    decision: Establish shared data quality indicators with Product Data Owners, alongside a catalog and corporate warehouse.
+    delivery: Founded the Data Quality Team and directed the technical implementation and deployment of the catalog and warehouse.
+    outcome: The catalog was adopted by 150+ users; the warehouse supported analysis, reporting, and company performance monitoring.
+  - id: analytics-capability
+    title: Building a data capability, not just a platform
+    experienceId: cloud-academy
+    focus: Leadership
+    views: [engineering, leadership, business-impact]
+    problem: Internal stakeholders and enterprise customers needed reliable analytics from multiple data sources.
+    decision: Develop the engineering and analytics team alongside a data lake, warehouse, and shared business metrics.
+    delivery: Hired and mentored engineers and analysts, developed career frameworks, evolved the infrastructure, and trained stakeholders on BI adoption.
+    outcome: Enabled stakeholder and customer analytics, unified data sources, and established KPI tracking for product usage and content engagement.
+  - id: ingestion-platform
+    title: Evolving real-time ingestion
+    experienceId: localstack
+    focus: Platform engineering
+    views: [engineering, business-impact]
+    problem: Large-scale ingestion needed reliable and efficient data flow, while internal stakeholders needed analytics tools.
+    decision: Maintain and enhance ingestion solutions while assessing tools and vendors for a new data platform.
+    delivery: Contributed to pipelines and reporting tools, supported product engineering, and resolved critical issues.
+    outcome: Supported the evolution of ingestion and internal analytics, and led vendor and tool selection for a new platform.
+
+capabilities:
+  - id: architecture
+    name: Data architecture
+    description: Turn business requirements into target architectures and implementation roadmaps.
+    experienceIds: [iconsulting-advisor, cloud-academy]
+    contributionIds: []
+  - id: governance
+    name: Data governance
+    description: Make quality, metadata, and trusted information a shared capability.
+    experienceIds: [cuebiq]
+    contributionIds: [prefect-soda, prefect-sifflet]
+  - id: leadership
+    name: Team leadership
+    description: Hire, mentor, develop career frameworks, and grow analytics adoption.
+    experienceIds: [cloud-academy, cuebiq]
+    contributionIds: []
+  - id: orchestration
+    name: Orchestration
+    description: Contribute integrations that connect workflows with analytics and quality tools.
+    experienceIds: []
+    contributionIds:
+      [
+        prefect-cube,
+        prefect-soda,
+        prefect-sifflet,
+        prefect-dbt,
+        prefect-contributions,
+      ]
+  - id: modeling
+    name: Data modeling & analytics
+    description: Build shared data foundations, useful metrics, and stakeholder-facing analytics.
+    experienceIds: [cloud-academy, iconsulting-analytics]
+    contributionIds: []
