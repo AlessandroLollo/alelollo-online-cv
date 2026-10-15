@@ -109,7 +109,6 @@ test("skills reveal evidence and global search includes contributions", async ({
   await governance.getByRole("button", { name: /evidence records/ }).click();
   await expect(page.locator('[data-record="cuebiq"]')).toBeVisible();
   await expect(page.locator("[data-record]")).toHaveCount(3);
-  await page.getByRole("button", { name: "Clear filters" }).click();
   await page.keyboard.press("Control+k");
   await expect(
     page.getByRole("searchbox", { name: "Search all career records" }),

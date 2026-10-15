@@ -424,10 +424,10 @@ export default function CareerExplorer({ career, base, pdfUrl }: Props) {
               ref={searchInput}
               value={query}
               onChange={(event) => {
+                setFocus("all");
+                setCapability(null);
                 if (view !== "search") {
                   setView("search");
-                  setFocus("all");
-                  setCapability(null);
                   window.location.hash = "search";
                 }
                 setQuery(event.target.value);
