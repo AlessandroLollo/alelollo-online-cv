@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   site: "https://alessandrolollo.github.io",
-  base: process.env.PUBLIC_BASE_PATH ?? "/alelollo-online-cv",
+  base: process.env.PUBLIC_BASE_PATH ?? "/me",
   integrations: [react()],
   vite: { plugins: [tailwindcss()] },
 });

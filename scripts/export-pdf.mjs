@@ -5,7 +5,7 @@ import { readFile, copyFile } from "node:fs/promises";
 import { resolve, sep } from "node:path";
 
 const root = resolve("dist");
-const base = (process.env.PUBLIC_BASE_PATH ?? "/alelollo-online-cv").replace(
+const base = (process.env.PUBLIC_BASE_PATH ?? "/me").replace(
   /\/?$/,
   "/",
 );

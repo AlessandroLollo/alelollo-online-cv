@@ -27,7 +27,7 @@ npm run build
 npm run dev
 ```
 
-Build once to prepare the PDF download in development. Rebuild after changing résumé content to refresh it. `npm run dev` starts the site at `/alelollo-online-cv/`; `npm run preview` serves the production output. Both normally use port 4321. The build runs Astro's type checks, generates static pages, and exports the PDF. In a managed environment with Chromium already installed, set `CHROMIUM_PATH=/usr/bin/chromium` instead of downloading a browser. Set `ASTRO_TELEMETRY_DISABLED=1` to disable Astro telemetry and `npm_config_cache` to a writable directory if the home directory is read-only.
+Build once to prepare the PDF download in development. Rebuild after changing résumé content to refresh it. `npm run dev` starts the site at `/me/`; `npm run preview` serves the production output. Both normally use port 4321. The build runs Astro's type checks, generates static pages, and exports the PDF. In a managed environment with Chromium already installed, set `CHROMIUM_PATH=/usr/bin/chromium` instead of downloading a browser. Set `ASTRO_TELEMETRY_DISABLED=1` to disable Astro telemetry and `npm_config_cache` to a writable directory if the home directory is read-only.
 
 ## Content and interaction
 
@@ -54,6 +54,6 @@ Playwright starts the production preview automatically. Tests cover saved-view m
 
 ## GitHub Pages
 
-The workflow validates PRs and deploys successful `main` builds through GitHub Actions. Set **Settings → Pages → Build and deployment → Source → GitHub Actions** when adopting this migration. The default base path is `/alelollo-online-cv`, matching the repository URL. `PUBLIC_BASE_PATH=/` builds for a root/custom domain; set `site` in `astro.config.mjs` and place your own CNAME in `public/` if using a custom domain. Do not restore the upstream theme's `online-cv.webjeda.com` CNAME.
+The workflow validates PRs and deploys successful `main` builds through GitHub Actions. Set **Settings → Pages → Build and deployment → Source → GitHub Actions** when adopting this migration. The default base path is `/me`, for `https://alessandrolollo.github.io/me/`. GitHub Pages assigns project-site paths from the repository name: **rename this repository to `me` in GitHub Settings → General → Repository name** to publish at that address. Changing Astro’s base path alone does not change the GitHub Pages URL. After renaming, confirm Pages still uses GitHub Actions and run the deployment workflow. Update local Git remotes to the renamed repository; existing GitHub repository links redirect automatically. `PUBLIC_BASE_PATH=/` builds for a root/custom domain; set `site` in `astro.config.mjs` and place your own CNAME in `public/` if using a custom domain. Do not restore the upstream theme's `online-cv.webjeda.com` CNAME.
 
 `dist/` is the complete deployable artifact, including `.nojekyll`, local images/assets, `/print/index.html`, and `alessandro-lollo-cv.pdf`. No Ruby, Jekyll, Docker, or server process is needed to serve it. Old Orbit/Jekyll theme sources are retained for provenance but are not part of the Astro build or published output. Astro configuration replaces `_config.yml`; the obsolete Ruby and Docker entry points have been removed. See `THIRD_PARTY_NOTICES.md` and `LICENSE.md` for attribution.
