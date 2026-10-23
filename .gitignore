@@ -4,3 +4,9 @@ _site/
 .jekyll-metadata
 .jekyll-cache
 .DS_Store
+node_modules/
+dist/
+.astro/
+playwright-report/
+test-results/
+public/alessandro-lollo-cv.pdf
